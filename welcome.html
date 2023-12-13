@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .all{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header{
+            margin-top: 10px;
+        }
+        .logo{
+            display: flex;
+        }
+        .header .vector{
+            margin-top: 57px;
+            margin-left: 10px;
+        }
+        .header h2{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 27px;
+            margin-left: 10px;
+            margin-top: 50px;
+        }
+        .header p{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 27px;
+            margin-top: 50px;
+            margin-left: 207px;
+        }
+        .nav ul{
+            margin-top: 45px;
+            padding-left: 82px;
+            padding-right: 82px;
+            justify-content: space-between;
+            list-style: none;
+            display: flex;
+        }
+        .nav a{
+            text-decoration: none;
+            color: inherit;
+            font-size: 19px;
+            font-weight: 400;
+        }
+        .headerimg{
+            margin-top: 19px;
+        }
+        .title h2{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 32px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        .category{
+            margin-top: 102px;
+            width: 285px;
+        }
+        .category img{
+            margin-left: 175px;
+            margin-top: 2px;
+        }
+        .category .first{
+            display: flex;
+        }
+        .first a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            color: inherit;
+        }
+        .category .second{
+            margin-top: 32px;
+        }
+        .second a{
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            color: inherit;
+        }
+        .category .third{
+            margin-top: 11px;
+        }
+        .third a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: #6b6b6b;
+        }
+        .category .fourth{
+            margin-top: 11px;
+        }
+        .fourth a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: inherit;
+        }
+        .container{
+            display: flex;
+        }
+        .content{
+            width: 895px;
+            margin-left: 20px;
+            margin-top: 80px;
+        }
+        .small{
+            display: flex;
+        }
+        .smallvideo{
+            margin-bottom: 50px;
+            border-radius: 8px;
+        }
+        .smallvideolast{
+            margin-bottom: 0px;
+            border-radius: 8px;
+        }
+        .smalltext h1{
+            margin-top: 199px;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+            color: #6b6b6b;
+        }
+        .smalltext h2{
+            margin-left: 20px;
+            margin-top: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        .smalltext p{
+            margin-left: 20px;
+            margin-top: 8px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .festtext h2{
+            margin-left: 19px;
+            margin-top: 259px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        .festtextlast h2{
+            margin-left: 19px;
+            margin-top: 240px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        .festtext p{
+            margin-left: 19px;
+            margin-top: 8px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .festtextlast p{
+            margin-left: 19px;
+            margin-top: 8px;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .bigtext h2{
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        .bigtext p{
+            margin-top: 8px;
+            margin-bottom: 60px;
+            text-decoration: none;
+            font-weight: 400px;
+            font-size: 16px;
+        }
+        .bigtextlast h2{
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 19px;
+        }
+        .bigtextlast p{
+            margin-top: 8px;
+            margin-bottom: 0px;
+            text-decoration: none;
+            font-weight: 400px;
+            font-size: 16px;
+        }
+
+        .behindpic{
+            margin-top: 50px;
+        }
+        .behindpicsecond{
+            margin-top: 50px;
+            margin-left: 102px;
+        }
+        .footer{
+            height: 413px;
+            width: 100%;
+            background-color: #f6f6f6;
+            margin-top: 100px;
+            padding-left: 120px;
+        }
+        .footerflex{
+            display: flex;
+        }
+        .footer h2{
+            text-decoration: none;
+            font-size: 36px;
+            font-weight: 700;
+            padding-top: 37px;
+            padding-bottom: 19px;
+        }
+        .footer p{
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            color: #6b6b6b;
+            margin-left: 102px;
+            line-height: 33px;
+        }
+        .footer a:last-child{
+            margin-left: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html" id="LOGO"><img src="./img/LOGO.jpg" height="82"></a>
+                <div class="vector">
+                <img src="./img/Vector 1.png" height="17">
+                </div>
+                <h2>MIRUS</h2>
+                <p>SHOW ME WHAT YOU GOT, MIRUS</p>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="uhheung.html">단체 작업물</a></li>
+                <li><a href="welcome.html"><b>개인 작업물</b></a></li>
+                <li><a href="bigfestival.html">축제 공연</a></li>
+                <li><a href="performancefirst.html">정기공연</a></li>
+                <li><a href="#">동방</a></li>
+                <li><a href="#">지원</a></li>
+            </ul>
+        </div>
+
+        <div class="headerimg">
+            <img src="./img/MainHeader.jpg" height="457">
+        </div>
+
+        <div class="title">
+            <h2>웰컴</h2>
+        </div>
+
+        <div class="container">
+            <div class="category">
+                <div class="first">
+                    <a>카테고리</a>
+                    <img src="./img/CaretUp.png" height="15">
+                </div>
+                <div class="second">
+                    <a>단체 작업물</a>
+                </div>
+                <div class="third">
+                    <a>vv2 remix cypher</a>
+                </div>
+                <div class="fourth">
+                    <a href="uhheung.html">어흥(Uh-Heung)</a>
+                </div>
+                <div class="third">
+                    <a>미러스마스(미완)</a>
+                </div>
+                <div class="second">
+                    <a>개인 작업물</a>
+                </div>
+                <div class="third">
+                    <a>Surfing in the moonlight</a>
+                </div>
+                <div class="fourth">
+                    <a href="welcome.html">웰컴</a>
+                </div>
+                <div class="third">
+                    <a>Just Go!</a>
+                </div>
+                <div class="third">
+                    <a>BTTB</a>
+                </div>
+                <div class="third">
+                    <a>Warp!</a>
+                </div>
+                <div class="second">
+                    <a>축제 공연</a>
+                </div>
+                <div class="third">
+                    <a>23 소축제</a>
+                </div>
+                <div class="fourth">
+                    <a href="bigfestival.html">23 대축제</a>
+                </div>
+                <div class="second">
+                    <a>정기공연</a>
+                </div>
+                <div class="fourth">
+                    <a href="performancefirst.html">2023 1학기</a>
+                </div>
+                <div class="fourth">
+                    <a href="performancesecond.html">2023 2학기</a>
+                </div>
+                <div class="second">
+                    <a>동방</a>
+                </div>
+                <div class="third">
+                    <a>미러스 동방을 소개합니다!</a>
+                </div>
+                <div class="second">
+                    <a>지원</a>
+                </div>
+                <div class="third">
+                    <a>미러스에 오신 것을 환영합니다!</a>
+                </div>
+            </div>
+    
+            <div class="content">
+                <div class="bigvideo">
+                    <iframe width="895" height="503" src="https://www.youtube.com/embed/FKsre0NTjXM?si=7XB0L35rAYrApx1q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="bigtextlast">
+                    <h2>웰컴(demo) (Prod. Grabby)</h2>
+                    <p>
+                        diveroncliff
+                        <br>
+                        <br>
+                        [Music Credit]
+                        <br>
+                        <br>
+                        Lyrics by diveroncliff
+                        <br>
+                        @imdiverstandinoncliff
+                        <br>
+                        <br>
+                        Composed by Grabby
+                        <br>
+                        @grabby1111
+                        <br>
+                        <br>
+                        Arranged by Vinn
+                        <br>
+                        @welcow.v
+                        <br>
+                        <br>
+                        Mixed / Mastered by Grabby, Field of Welcow
+                        <br>
+                        @grabby1111 @fieldof.welcow
+                        <br>
+                        <br>
+                        Jacket by 조수빈 
+                        <br>
+                        @empty_w.tank
+                        <br>
+                        <br>
+                        [가사]
+                        <br>
+                        안녕하세요 지금은 자기소개시간
+                        <br>
+                        저는요 힙합하는 준범이라고 합니다
+                        <br>
+                        음악한다고 공부도 때려쳤다지만
+                        <br>
+                        이도저도 아닌 그냥 병신이랍니다
+                        <br>
+                        뛰어난 줄 알고 꽤나 취해있었지만
+                        <br>
+                        이제서야 이걸 취미로 생각하지 난
+                        <br>
+                        그동안 딱히 내 얘길 하진 않았지만
+                        <br>
+                        재밌게 들어주신다면 정말 감사합니다
+                        <br>
+                        죽여주는 노래에 또 까딱이는 고개
+                        <br>
+                        그래서 얘가 음악을 놓지 못하는 거래
+                        <br>
+                        누군가 공감할 수 있는 가사를 적는게
+                        <br>
+                        얘가 음악을 하면서 정말로 바라는 거래
+                        <br>
+                        여기저기 또 말해 이번에 쓴거 어떤데
+                        <br>
+                        힘을 너무 뺐다던데 재미가 없다던데
+                        <br>
+                        솔직히 나도 몰라요 플로우 어떻게 짜는데
+                        <br>
+                        하고싶은 얘기 하면 그게 힙합인건데
+                        <br>
+                        모두가 내게 말해 진짜 너는 랩은 잘해
+                        <br>
+                        근데 걸로 밥벌어먹고 살 정도는 아직 안 돼
+                        <br>
+                        돈이 문제가 아니라 이걸 꼭 해야만
+                        <br>
+                        살아갈 수 있을것만 같은 기분이라고 다시 말해
+                        <br>
+                        이제부터 내 얘기를 다뤄보려고 해
+                        <br>
+                        지금 이걸 듣고있는 모두에게 전해
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                        <br>
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                        <br>
+                        <br>
+                        안녕하세요 지금은 자기소개시간
+                        <br>
+                        저는요 힙합하는 준범이라고 합니다
+                        <br>
+                        이제서야 공부를 해보려고 하지만 나
+                        <br>
+                        학점도 하나 못 챙기는 병신이랍니다
+                        <br>
+                        이제는 더 이상 물러날 곳이 없단걸 알아
+                        <br>
+                        하지만 가사가 떠오르면 하던걸 접고 나가
+                        <br>
+                        만약 내가 랩을 때려치고 공부를 했다면
+                        <br>
+                        준형이처럼 나도 좋은 대학에 붙었을까
+                        <br>
+                        반드시 해낼거라 말했어 근거랄 건 그다지 없었던
+                        <br>
+                        철없는 무식한 소리였지만 이미 내가 정해놓은 답이었어
+                        <br>
+                        길었던 시간을 낭비해버렸고 학창시절을 다 망쳐버렸어도
+                        <br>
+                        떠나지 못할 순간이 있었으니 불행한 기억은 아니었어
+                        <br>
+                        그들이 소리치면 귀를 막고 볼륨을 더 세게 키웠어
+                        <br>
+                        내가 할 수 있는 것에만 최선을 다했고 이게 내 꿈이었어
+                        <br>
+                        이제 두 번째 꿈을 꿀 차례 엘비가 말해 위로가 될 지는 몰라도
+                        <br>
+                        죽음까지 내가 다 막아낼 거고 우리가 쉼터가 되기를 원해
+                        <br>
+                        행복하길 원해
+                        <br>
+                        내 감정과 생각 음악 모두 다 여기 꺼내
+                        <br>
+                        이제야 난 느꼈네
+                        <br>
+                        첫 페이지가 끝나고 두 번째 인사를 건네
+                        <br>
+                        이제부터 내 얘기를 다뤄보려고 해
+                        <br>
+                        지금 이걸 듣고있는 모두에게 전해
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        Welcome to my (world)
+                        <br>
+                        내 세상에 와 줘서 진심으로 환영해
+                        <br>
+                        더 크게 외쳐 Welcome to my (world)
+                    </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>MAP</h2>
+        <div class="footerflex">
+            <div class-="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.213334251485!2d126.73283275982442!3d37.34054060888556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b710604572dad%3A0x11fb3a8193e722a6!2z7ZWc6rWt7IKw7JeF6riw7Iig64yA7ZWZ6rWQIOyihe2Vqeq1kOycoeq0gA!5e0!3m2!1sko!2skr!4v1702210842193!5m2!1sko!2skr" width="508" height="275" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p>주소 : 경기도 시흥시 산기대학로 237 종합교육관 지하 1층 128호
+                <br>
+                <a href="https://www.instagram.com/mirus_tuk/"><img src="./img/InstagramLogo.png"></a>
+                <a href="https://www.youtube.com/@mirus_"><img src="./img/YoutubeLogo.png"></a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
